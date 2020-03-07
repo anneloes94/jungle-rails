@@ -34,6 +34,11 @@
 
   <div class="row">
     <div class="col-xs-12">
+    <% if enhanced_cart === [] %>
+      <div class="alert alert-secondary" role="alert" > 
+      Your cart is currently empty. Add <a href="/"> items </a> to your cart to view them here.
+      </div>
+    <% else %>
       <%= form_tag orders_path do %>
         <script
           src="https://checkout.stripe.com/checkout.js" class="stripe-button"
@@ -46,6 +51,7 @@
           data-currency="cad">
         </script>
       <% end %>
+    <% end %>
     </div>
   </div>
 
