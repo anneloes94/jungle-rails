@@ -28,6 +28,11 @@
             <%= humanized_money_with_symbol @order.total_cents / 100.0 %>
           </th>
         </tr>
+        <tr>
+          <th colspan="4">
+            EMAIL ADDRESS: <%= @order.email %>
+          </th>
+        </tr>
       </tfoot>
     </table>
   </div>
