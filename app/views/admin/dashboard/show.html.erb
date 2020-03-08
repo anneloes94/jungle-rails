@@ -1,2 +1,28 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+<h1>Dashboard</h1>
+<p>Here you can find the number of products and categories currently present in Jungle.</p>
+
+
+
+<div class="jumbotron">
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Products:</h4>
+          <span class="badge badge-info"> <%= @products.map{|product| product.quantity}.sum %> </span>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Categories:</h4>
+          <span class="badge badge-info"> <%= @categories.count %> </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
