@@ -1,7 +1,18 @@
 # Jungle
 
-A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
+A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example. 
 
+Jungle's home page displays products which a user can add to their cart and pay for (using the paying platform Stripe). A user can register, login, visit the about page and filter products based on a selected category. 
+
+An admin has to use HTTP basic authentication to access two admin sections: 1) viewing and adding new products, and 2) a dashboard displaying the current amount of products and categories in the e-commerce app.
+
+## Walkthrough
+
+![The home page, displaying products](#hello)
+
+![A user can view their cart](#hello)
+
+![An admin can add a new product to the webshop](#hello)
 
 ## Setup
 
