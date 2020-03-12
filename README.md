@@ -8,11 +8,14 @@ An admin has to use HTTP basic authentication to access two admin sections: 1) v
 
 ## Walkthrough
 
-![The home page, displaying products](#hello)
+The home page, displaying products
+![Homepage](https://raw.githubusercontent.com/anneloes94/jungle-rails/master/docs/Jungle_homepage.png)
 
-![A user can view their cart](#hello)
+A user can view their cart
+![Cart](https://raw.githubusercontent.com/anneloes94/jungle-rails/master/docs/Jungle_MyCart.png)
 
-![An admin can add a new product to the webshop](#hello)
+An admin can add a new product to the webshop
+![New_product](https://raw.githubusercontent.com/anneloes94/jungle-rails/master/docs/Jungle_Admin_NewProduct.png)
 
 ## Setup
 
