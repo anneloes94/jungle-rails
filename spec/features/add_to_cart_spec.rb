@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature "Visitor clicks on product in homepage", type: :feature, js: true do
+RSpec.feature "Visitor adds product to cart in homepage", type: :feature, js: true do
 
   # SETUP
   before :each do
@@ -22,14 +22,15 @@ RSpec.feature "Visitor clicks on product in homepage", type: :feature, js: true 
     scenario "They can select the link and get forwarded to the View Product page" do
       # ACT
       visit root_path
-      find_link('Details', match: :first).click
+      save_screenshot
+      expect(page).to have_text 'My Cart (0)'
+      click_link_or_button('Add', match: :first)
   
       # DEBUG
-      # save_screenshot
+      save_screenshot
   
       #VERIFY
-      expect(page).to have_css 'article.product-detail', count: 1
-      # save_screenshot
+      expect(page).to have_text 'My Cart (1)'
     end
 
 end
