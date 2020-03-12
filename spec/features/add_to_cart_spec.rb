@@ -19,7 +19,7 @@ RSpec.feature "Visitor adds product to cart in homepage", type: :feature, js: tr
   end
 
     # it block
-    scenario "They can select the link and get forwarded to the View Product page" do
+    scenario "They can click Add and cart will show up as 'Cart(1)'" do
       # ACT
       visit root_path
       save_screenshot
